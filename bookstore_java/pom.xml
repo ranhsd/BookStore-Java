@@ -119,6 +119,7 @@
 				<version>3.0.0</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<outputDirectory>U:\JBoss6\server\default\deploy\</outputDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
