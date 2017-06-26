@@ -24,17 +24,18 @@ public class Author {
 
 	@Column(name = "'authorName'")
 	private String authorName;
+	
 	@Column(name = "'numberOfBOoks'")
-	private String numberOfBooks;
+	private Integer numberOfBooks;
 	
 	@OneToMany
-	private List<Book> books = new ArrayList<Book>();
+	private List<Book> authorBooks = new ArrayList<Book>();
 
 	public Author() {
 		System.out.println();
 	}
 	
-	public Author(String authorId, String authorName, String numberOfBooks) {
+	public Author(String authorId, String authorName, Integer numberOfBooks) {
 		super();
 		this.authorId = authorId;
 		this.authorName = authorName;
@@ -57,11 +58,11 @@ public class Author {
 		this.authorName = authorName;
 	}
 
-	public String getNumberOfBooks() {
+	public Integer getNumberOfBooks() {
 		return numberOfBooks;
 	}
 
-	public void setNumberOfBooks(String numberOfBooks) {
+	public void setNumberOfBooks(Integer numberOfBooks) {
 		this.numberOfBooks = numberOfBooks;
 	}
 

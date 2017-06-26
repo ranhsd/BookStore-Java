@@ -17,8 +17,26 @@ public class Book {
 	@Column(name = "'bookId'")
 	private String bookId;
 	
+	
 	@Column(name = "'authorId'")
 	private String authorId;
+	
+	@Column(name = "'isbn'",length = 20)
+	private String isbn;
+	
+	@Column(name = "'bookName'",length = 100)
+	private String bookName;
+	
+	@Column(name = "'price'")
+	private Integer price;
+	
+	@Column(name = "'priceCurrency'",length = 10)
+	private String priceCurrency;
+	
+	@Column(name = "'authorName'",length = 100)
+	private String authorName;
+	
+	
 
 
 	public Book() {
@@ -30,6 +48,11 @@ public class Book {
 		super();
 		this.bookId = bookId;
 		this.authorId = authoerId;
+		this.isbn = isbn;
+		this.bookName = bookName;
+		this.price = price;
+		this.priceCurrency = priceCurrency;
+		this.authorName = authorName;
 	}
 
 	public String getBookId() {
@@ -46,6 +69,46 @@ public class Book {
 
 	public void setAuthorId(String authorId) {
 		this.authorId = authorId;
+	}
+	
+	public String getIsbn() {
+		return isbn;
+	}
+	
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+	
+	public String getBookName() {
+		return bookName;
+	}
+	
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+	
+	public Integer getPrice() {
+		return price;
+	}
+	
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+	
+	public String getPriceCurrency() {
+		return priceCurrency;
+	}
+	
+	public void setPriceCurrency(String priceCurrency) {
+		this.priceCurrency = priceCurrency;
+	}
+	
+	public String getAuthorName() {
+		return authorName;
+	}
+	
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
 	}
 
 }
