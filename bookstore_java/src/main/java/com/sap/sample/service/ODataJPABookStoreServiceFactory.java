@@ -23,8 +23,8 @@ public class ODataJPABookStoreServiceFactory extends ODataJPAServiceFactory {
 		oDataJPAContext.setEntityManagerFactory(emfHolder.getEntityManagerFactory());
 		oDataJPAContext.setPersistenceUnitName(emfHolder.getPersistenceUnitName());
 
-		oDataJPAContext.setPageSize(PAGE_SIZE);
-		setDetailErrors(true);
+		//oDataJPAContext.setPageSize(PAGE_SIZE);
+		//setDetailErrors(true);
 
 		return oDataJPAContext;
 	}
@@ -33,8 +33,8 @@ public class ODataJPABookStoreServiceFactory extends ODataJPAServiceFactory {
 	 *
 	 */
 	private static class EmfHolder {
-		private static final String PUNIT_NAME = "shoppinglist";
-		private static final String PUNIT_NAME_DEFAULT = "MyFormulaHsqlDb";
+		private static final String PUNIT_NAME = "bookstore";
+		private static final String PUNIT_NAME_DEFAULT = "bookstore";
 		private static final String DATA_SOURCE_NAME = "java:comp/env/jdbc/DefaultDB";
 
 		final private EntityManagerFactory emf;

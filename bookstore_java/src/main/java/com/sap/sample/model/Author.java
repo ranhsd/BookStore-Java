@@ -15,6 +15,7 @@ import javax.persistence.Table;
  */
 @Entity(name = "Author")
 @Table(name = "\"bookstore.db::store.Author\"")
+
 public class Author {
 
 	@Id
@@ -23,7 +24,7 @@ public class Author {
 
 	@Column(name = "authorName'")
 	private String authorName;
-	@Column(name = "'numberOfBOoks'")
+	@Column(name = "numberOfBOoks")
 	private String numberOfBooks;
 	
 	@OneToMany
