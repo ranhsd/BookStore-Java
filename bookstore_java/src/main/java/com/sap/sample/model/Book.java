@@ -14,10 +14,10 @@ import javax.persistence.Table;
 public class Book {
 
 	@Id
-	@Column(name = "bookId")
+	@Column(name = "'bookId'")
 	private String bookId;
 	
-	@Column(name = "authorId")
+	@Column(name = "'authorId'")
 	private String authorId;
 
 

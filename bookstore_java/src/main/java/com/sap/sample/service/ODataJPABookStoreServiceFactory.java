@@ -23,8 +23,8 @@ public class ODataJPABookStoreServiceFactory extends ODataJPAServiceFactory {
 		oDataJPAContext.setEntityManagerFactory(emfHolder.getEntityManagerFactory());
 		oDataJPAContext.setPersistenceUnitName(emfHolder.getPersistenceUnitName());
 
-		//oDataJPAContext.setPageSize(PAGE_SIZE);
-		//setDetailErrors(true);
+		oDataJPAContext.setPageSize(PAGE_SIZE);
+		setDetailErrors(true);
 
 		return oDataJPAContext;
 	}

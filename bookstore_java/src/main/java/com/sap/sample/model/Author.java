@@ -19,12 +19,12 @@ import javax.persistence.Table;
 public class Author {
 
 	@Id
-	@Column(name = "authorId")
+	@Column(name = "'authorId'")
 	private String authorId;
 
-	@Column(name = "authorName'")
+	@Column(name = "'authorName'")
 	private String authorName;
-	@Column(name = "numberOfBOoks")
+	@Column(name = "'numberOfBOoks'")
 	private String numberOfBooks;
 	
 	@OneToMany
