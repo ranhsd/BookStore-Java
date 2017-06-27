@@ -19,17 +19,17 @@ import javax.persistence.Table;
 public class Author {
 
 	@Id
-	@Column(name = "'authorId'")
+	@Column(name = "authorId")
 	private String authorId;
 
-	@Column(name = "'authorName'", length = 100)
+	@Column(name = "authorName", length = 100)
 	private String authorName;
 	
-	@Column(name = "'numberOfBooks'")
+	@Column(name = "numberOfBooks")
 	private Integer numberOfBooks;
 	
-	@OneToMany
-	private List<Book> authorBooks = new ArrayList<Book>();
+//	@OneToMany
+//	private List<Book> authorBooks = new ArrayList<Book>();
 
 	public Author() {
 		System.out.println();

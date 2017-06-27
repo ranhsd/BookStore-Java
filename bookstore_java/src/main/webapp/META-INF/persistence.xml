@@ -3,7 +3,7 @@
 	<persistence-unit name="bookstore" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>com.sap.sample.model.Author</class>
-		<class>com.sap.sample.model.Book</class>
+		<!-- <class>com.sap.sample.model.Book</class> -->
 		<jta-data-source>jdbc/DefaultDB</jta-data-source>
 		<non-jta-data-source>java:comp/env/jdbc/DefaultDB</non-jta-data-source>
 		<properties>

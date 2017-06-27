@@ -14,26 +14,26 @@ import javax.persistence.Table;
 public class Book {
 
 	@Id
-	@Column(name = "'bookId'")
+	@Column(name = "'bookId'", nullable = false)
 	private String bookId;
 	
 	
-	@Column(name = "'authorId'")
+	@Column(name = "'authorId'", nullable = false)
 	private String authorId;
 	
-	@Column(name = "'isbn'",length = 20)
+	@Column(name = "'isbn'",length = 20, nullable = false)
 	private String isbn;
 	
-	@Column(name = "'bookName'",length = 100)
+	@Column(name = "'bookName'",length = 100, nullable = false)
 	private String bookName;
 	
-	@Column(name = "'price'")
+	@Column(name = "'price'", nullable = false)
 	private Integer price;
 	
-	@Column(name = "'priceCurrency'",length = 10)
+	@Column(name = "'priceCurrency'",length = 10,nullable = true)
 	private String priceCurrency;
 	
-	@Column(name = "'authorName'",length = 100)
+	@Column(name = "'authorName'",length = 100, nullable = true)
 	private String authorName;
 	
 	
