@@ -22,10 +22,10 @@ public class Author {
 	@Column(name = "'authorId'")
 	private String authorId;
 
-	@Column(name = "'authorName'")
+	@Column(name = "'authorName'", length = 100)
 	private String authorName;
 	
-	@Column(name = "'numberOfBOoks'")
+	@Column(name = "'numberOfBooks'")
 	private Integer numberOfBooks;
 	
 	@OneToMany
